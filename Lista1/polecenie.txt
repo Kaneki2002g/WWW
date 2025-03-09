@@ -1,0 +1,6 @@
+Stworzyc strone:
+- HTML5 + CSS
+- Mobile first
+- Grid/FlexBox
+- Style we wspolnym CSS
+- Walidacja W3Consortium
