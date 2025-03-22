@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio - Gabriel Szlachciak</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<nav class="site-nav grid">
+		<h1>Gabriel Szlachciak</h1>
+		<ul class="pages-nav">
+		   <li><a href="main.html">Home</a></li>
+		   <li><a href="">Interests</a></li>
+		   <li><a href="projects.html">Projects</a></li>
+		</ul>
+	</nav>
+
+	<section id="projects" class="flexbox">
+		<div class="desc">
+			<h3>Compiler</h3>
+			Compiler for simple imperative language, with loops,
+			conditions and procedures. With small optimisations of
+			output assembly program.
+			Project made for formal languages and translation
+			techniques course.<br>
+			<a href="" class="button">Check it out</a>
+		</div>
+		<div class="view">
+			<h3>Favorite code part:</h3>
+			<pre><code>void declareVariables(Component* declarations){
+	Component* decl = declarations->children;
+	while(decl!=nullptr){
+		if(decl->type==21){
+			declare_var(decl);
+		} else if(decl->type==22){
+			declare_tab(decl);
+		} else{
+			encounteredErrors = true;
+			errorLog.push_back("l:"+ \
+			std::to_string(pid->code_line));
+		}
+		decl=decl->next;
+	}
+}
+</code></pre>
+		</div>
+		<div class="desc">
+			<h3>Crosswalk Assistant AI</h3>
+			Project for team programing.
+			Using Yolov10 model to detect disabled people
+			on crosswalks in order to prolong duration of 
+			green light. Written in python, with client-server
+			architecture.<br>
+			<a href="" class="button">Check it out</a>
+		</div>
+		<div class="view">
+			<img src="assets/Handicap.svg" alt="handicap person">
+			<!-- <a href="https://storyset.com/people">People illustrations by Storyset</a> -->
+		</div>
+		<div class="desc">
+			<h3>Go game</h3>
+			Client-server application
+			made with my friend from year in college.
+			Go game implementation in Java, with saving game states.<br>
+			<a href="" class="button">Check it out</a>
+		</div>
+		<div class="view">
+			<div class="gopic">
+			<img src="assets/go2.png" alt="go game">
+			</div>
+		</div>
+	</section>
+
+	
+
+	<footer>
+		<div class="grid">
+		  <p class="copyright">&copy;Copyright 2025 Gabriel Szlachciak</p>
+		  <ul class="social">
+			<li><a href="#"><img src="assets/icon_li.svg" alt="LinkedIn"></a></li>
+			<li><a href="#"><img src="assets/icon_gh.svg" alt="GitHub"></a></li>
+		  </ul>
+		</div>
+	</footer>
+
+</body>
+</html>
