@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -10,9 +11,11 @@
 	<nav class="site-nav grid">
 		<h1>Gabriel Szlachciak</h1>
 		<ul class="pages-nav">
-		   <li><a href="main.html">Home</a></li>
-		   <li><a href="">Interests</a></li>
-		   <li><a href="projects.html">Projects</a></li>
+			<li class="forpc"><img src="assets/icon.svg" class="invert-icon"></li>
+		   	<li><a href="main.html">Home</a></li>
+		   	<li><a href="">Interests</a></li>
+		   	<li><a href="projects.html">Projects</a></li>
+			<li class="forpc"><img src="assets/icon.svg" class="invert-icon flip"></li>
 		</ul>
 	</nav>
 
@@ -25,23 +28,28 @@
 			Project made for formal languages and translation
 			techniques course.<br>
 			<a href="" class="button">Check it out</a>
+			<h3 class="forpc">Technlogies used:</h3>
+			<div class="forpc technologies">
+				<img src="assets/cpp.svg" alt="CPP">
+				<img class="invert-icon" src="assets/bison.png" alt="bison">
+			</div>
 		</div>
 		<div class="view">
 			<h3>Favorite code part:</h3>
-			<pre><code>void declareVariables(Component* declarations){
-	Component* decl = declarations->children;
-	while(decl!=nullptr){
-		if(decl->type==21){
-			declare_var(decl);
-		} else if(decl->type==22){
-			declare_tab(decl);
-		} else{
-			encounteredErrors = true;
-			errorLog.push_back("l:"+ \
-			std::to_string(pid->code_line));
-		}
-		decl=decl->next;
-	}
+			<pre><code><span style="color: rgb(160, 120, 163) !important;">void</span> <span style="color: rgb(127, 162, 194) !important;">declareVariables</span>(Component* <span style="color: rgb(105, 177, 135) !important;">declarations</span>){
+ Component* decl = declarations->children; 
+ <span style="color: rgb(177, 153, 105) !important;">while</span>(decl!=nullptr){
+	<span style="color: rgb(177, 153, 105) !important;">if</span>(decl->type==21){
+   declare_var(decl);
+  } <span style="color: rgb(177, 153, 105) !important;">else if</span>(decl->type==22){
+   declare_tab(decl);
+  } <span style="color: rgb(177, 153, 105) !important;">else</span>{
+   encounteredErrors = true;
+   errorLog.push_back("l:"+ \
+   std::to_string(pid->code_line));
+  }
+  decl=decl->next;
+ }
 }
 </code></pre>
 		</div>
@@ -53,6 +61,12 @@
 			green light. Written in python, with client-server
 			architecture.<br>
 			<a href="" class="button">Check it out</a>
+			<h3 class="forpc">Technlogies used:</h3>
+			<div class="forpc technologies">
+				<img src="assets/python.png" alt="python">
+				<img src="assets/yolo.svg" alt="bison">
+			</div>
+		</div>
 		</div>
 		<div class="view">
 			<img src="assets/Handicap.svg" alt="handicap person">
@@ -64,6 +78,12 @@
 			made with my friend from year in college.
 			Go game implementation in Java, with saving game states.<br>
 			<a href="" class="button">Check it out</a>
+			<h3 class="forpc">Technlogies used:</h3>
+			<div class="forpc technologies">
+				<img src="assets/JAVA.svg" alt="CPP">
+				<img src="assets/js.png" alt="bison">
+			</div>
+		</div>
 		</div>
 		<div class="view">
 			<div class="gopic">
