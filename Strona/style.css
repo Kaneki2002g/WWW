@@ -19,6 +19,13 @@ body{
     font-family: '8bitOperatorPlus';
 }
 
+header{
+  text-align: center;
+  color: #afc0d6;
+  font-size: 3em;
+  padding-top: 10px;
+}
+
 .button{
     background: none;
     border: 5px dashed var(--primary);
@@ -47,11 +54,11 @@ body{
   /* fonts */
   @font-face {
     font-family: '8bitOperatorPlus';
-    src: url("assets/8bitOperatorPlus8-Regular.ttf") format("truetype"),
+    src: url("assets/8bitOperatorPlus8-Regular.ttf") format("truetype");
     }
   @font-face {
     font-family: 'vcr-osd-mono';
-    src: url("assets/VCR_OSD_MONO.ttf") format("truetype"),
+    src: url("assets/VCR_OSD_MONO.ttf") format("truetype");
   }
 
 h1,h2,h3,h4{
@@ -180,6 +187,20 @@ h4{
     text-align: center;
     margin: 0 20px;
   }
+  
+  #interests{
+    padding: 10px 20px;
+  }
+
+  #interests li{
+    grid-column: span 8;
+    text-align: center;
+  }
+
+  #interests img{
+    width:50%;
+  }
+
   footer{
     padding: 30px 20px;
     background-color: #0e0f0f;
@@ -256,6 +277,7 @@ h4{
     border-style: outset;
     border-width: 3px;
   }
+
   /* small tablet styles */
   @media screen and (min-width: 620px){
   .pages-nav{
@@ -295,10 +317,15 @@ h4{
     }
 
     .flexbox{
+      padding-top:15px;
       display:flex;
       flex-direction: row;
       flex-wrap: wrap;
       gap: 10px;
+    }
+
+    header{
+      padding-top:15px;
     }
   
     .desc{
@@ -338,6 +365,14 @@ h4{
     }
     .gopic{
       padding: 0 0 0 0;
+    }
+
+    #interests{
+      padding: 10px 40px;
+    }
+
+    #interests li{
+      grid-column: span 4;
     }
   }
   
@@ -386,7 +421,10 @@ h4{
     width: 100%;
   }
   .flexbox{
-    padding: 100px 200px 100px 200px;
+    padding: 20px 200px 100px 200px;
+  }
+  header{
+    padding-top: 20px;
   }
   .technologies{
     display: flex;
@@ -395,5 +433,20 @@ h4{
   }
   .technologies img{
     width: 100px;
+  }
+
+  #skills li{
+    padding: 10px;
+    background: rgba(0,0,0,0.2);
+    grid-column: span 2;
+    text-align: center;
+  }
+  .interest-text{
+    margin: 0px 15px 0px 15px;
+    font-size: 1.5em;
+  }
+
+  #interests{
+    padding: 20px 150px;
   }
 }
